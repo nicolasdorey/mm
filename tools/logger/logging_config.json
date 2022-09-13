@@ -1,0 +1,37 @@
+{
+    "version": 1, 
+    "disable_existing_loggers": true, 
+    "formatters": {
+        "simple": {
+            "format": "%(levelname)s - %(asctime)s - %(message)s"
+        }
+    },
+    "handlers": {
+        "console": {
+            "formatter": "simple", 
+            "class": "logging.StreamHandler", 
+            "stream": "ext://sys.stdout", 
+            "level": "INFO"
+        }, 
+        "file": {
+            "backupCount": 10000, 
+            "level": "DEBUG", 
+            "encoding": "utf8", 
+            "delay": true, 
+            "formatter": "simple", 
+            "class": "logging.handlers.RotatingFileHandler", 
+            "maxBytes": 524288
+        }
+    }, 
+    "loggers":{
+        "simpleExample":{
+            "level": "DEBUG", 
+            "propagate": false, 
+            "handlers": ["console"]
+        }
+    }, 
+    "root": {
+        "level": "DEBUG", 
+        "handlers": ["console", "file"]
+    }
+}
