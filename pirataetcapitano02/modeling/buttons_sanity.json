@@ -1,0 +1,86 @@
+{
+    "software":[{
+        "name":"maya",
+        "version":"2020.2",  
+        "templates":[
+            {
+            "entity":"asset",
+            "step":"modeling",
+            "task":"sculpt",
+            "sanity_checks":[
+                {"category":"SCENE","check":"run_rs_load", "fix":"fix_rs_load","ui":{"label":"Redshift Load"}},
+                {"category":"SCENE","check":"run_check_time_unit", "fix":"fix_time_unit","ui":{"label":"Time unit"}},
+                {"category":"SCENE","check":"run_frame_range", "fix":"fix_frame_range","ui":{"label":"Frame range"}},
+                {"category":"SCENE","check":"run_ss_sets", "fix":"fix_ss_sets","ui":{"label":"Selection sets"}},
+                {"category":"SCENE","check":"run_unauthorized", "fix":"fix_unauthorized","ui":{"label":"Authorized nodes"}},
+                {"category":"SCENE","check":"run_unknown", "fix":"fix_unknown","ui":{"label":"Unknown nodes"}},
+                {"category":"SCENE","check":"run_dispay_layers", "fix":"fix_display_layers","ui":{"label":"Display layers"}},
+                {"category":"SCENE","check":"run_mtl", "fix":"fix_mtl","ui":{"label":"Non default mtl"}},
+                {"category":"SCENE","check":"run_ref", "fix":"fix_ref","ui":{"label":"References"}},
+                {"category":"SCENE","check":"run_namespaces", "fix":"fix_namespaces","ui":{"label":"Namespaces"}},
+
+                {"category":"TOP NODES","check":"run_many_top_node", "fix":"None","ui":{"label":"Many top nodes"}},
+                {"category":"TOP NODES","check":"run_tn_name", "fix":"fix_tn_name","ui":{"label":"Nomenclature"}},
+                {"category":"TOP NODES","check":"run_tn_piv", "fix":"fix_tn_piv","ui":{"label":"Pivot values"}},
+                {"category":"TOP NODES","check":"run_tn_ft", "fix":"fix_tn_pos","ui":{"label":"Freeze transform"}},
+
+                {"category":"GROUPS","check":"run_grp_nom", "fix":"fix_grp_nom","ui":{"label":"Grp momenclature"}},
+                {"category":"GROUPS","check":"run_grp_ft", "fix":"fix_grp_ft","ui":{"label":"Grp freeze transform"}},
+                {"category":"GROUPS","check":"run_grp_visib", "fix":"fix_grp_visib","ui":{"label":"Grp visibility"}},
+
+                {"category":"MESH","check":"run_mesh_nom", "fix":"fix_mesh_nom","ui":{"label":"Mesh nomenclature"}},
+                {"category":"MESH","check":"run_mesh_shape_nom", "fix":"fix_mesh_shape_nom","ui":{"label":"Mesh shape momenclature"}},
+                {"category":"MESH","check":"run_mesh_ft", "fix":"fix_mesh_ft","ui":{"label":"Mesh freeze transform"}},
+                {"category":"MESH","check":"run_mesh_history", "fix":"fix_mesh_history","ui":{"label":"Mesh history"}},
+                {"category":"MESH","check":"run_mesh_double_shape", "fix":"fix_mesh_double_shape","ui":{"label":"Mesh double shape"}},
+                {"category":"MESH","check":"run_mesh_visibility", "fix":"fix_mesh_visibility","ui":{"label":"Mesh visibility"}},
+                {"category":"MESH","check":"run_mesh_renderStats", "fix":"fix_mesh_renderStats","ui":{"label":"Mesh wrong renderStats"}},
+                {"category":"MESH","check":"run_mesh_instance", "fix":"fix_mesh_instance","ui":{"label":"Mesh instance"}},
+                {"category":"MESH","check":"run_mesh_cleanup", "fix":"None","ui":{"label":"Mesh cleanup"}},
+                {"category":"MESH","check":"run_mesh_polyColor", "fix":"fix_mesh_polyColor","ui":{"label":"Mesh polyColor"}},
+                {"category":"MESH","check":"run_mesh_ngones", "fix":"None","ui":{"label":"Mesh nGones"}},
+                {"category":"MESH","check":"run_mesh_geo_issues", "fix":"None","ui":{"label":"Mesh geo Issues"}}
+            ]
+        },
+        {
+            "entity":"assetLibrary",
+            "step":"modeling",
+            "task":"master",
+            "sanity_checks":[
+                {"category":"SCENE","check":"run_rs_load", "fix":"fix_rs_load","ui":{"label":"Redshift Load"}},
+                {"category":"SCENE","check":"run_check_time_unit", "fix":"fix_time_unit","ui":{"label":"Time unit"}},
+                {"category":"SCENE","check":"run_frame_range", "fix":"fix_frame_range","ui":{"label":"Frame range"}},
+                {"category":"SCENE","check":"run_unauthorized", "fix":"fix_unauthorized","ui":{"label":"Authorized nodes"}},
+                {"category":"SCENE","check":"run_unknown", "fix":"fix_unknown","ui":{"label":"Unknown nodes"}},
+                {"category":"SCENE","check":"run_dispay_layers", "fix":"fix_display_layers","ui":{"label":"Display layers"}},
+                {"category":"SCENE","check":"run_mtl", "fix":"fix_mtl","ui":{"label":"Non default mtl"}},
+                {"category":"SCENE","check":"run_ref", "fix":"fix_ref","ui":{"label":"References"}},
+                {"category":"SCENE","check":"run_namespaces", "fix":"fix_namespaces","ui":{"label":"Namespaces"}},
+
+                {"category":"TOP NODES","check":"run_many_top_node", "fix":"None","ui":{"label":"Many top nodes"}},
+                {"category":"TOP NODES","check":"run_tn_name", "fix":"fix_tn_name","ui":{"label":"Nomenclature"}},
+                {"category":"TOP NODES","check":"run_tn_piv", "fix":"fix_tn_piv","ui":{"label":"Pivot values"}},
+                {"category":"TOP NODES","check":"run_tn_ft", "fix":"fix_tn_pos","ui":{"label":"Freeze transform"}},
+
+                {"category":"GROUPS","check":"run_subasset_nom", "fix":"None","ui":{"label":"Subassets"}},
+                {"category":"GROUPS","check":"run_grp_nom", "fix":"fix_grp_nom","ui":{"label":"Grp momenclature"}},
+                {"category":"GROUPS","check":"run_grp_ft", "fix":"fix_grp_ft","ui":{"label":"Grp freeze transform"}},
+                {"category":"GROUPS","check":"run_grp_visib", "fix":"fix_grp_visib","ui":{"label":"Grp visibility"}},
+
+                {"category":"MESH","check":"run_mesh_nom", "fix":"fix_mesh_nom","ui":{"label":"Mesh nomenclature"}},
+                {"category":"MESH","check":"run_mesh_shape_nom", "fix":"fix_mesh_shape_nom","ui":{"label":"Mesh shape momenclature"}},
+                {"category":"MESH","check":"run_mesh_ft", "fix":"fix_mesh_ft","ui":{"label":"Mesh freeze transform"}},
+                {"category":"MESH","check":"run_mesh_history", "fix":"fix_mesh_history","ui":{"label":"Mesh history"}},
+                {"category":"MESH","check":"run_mesh_double_shape", "fix":"fix_mesh_double_shape","ui":{"label":"Mesh double shape"}},
+                {"category":"MESH","check":"run_mesh_visibility", "fix":"fix_mesh_visibility","ui":{"label":"Mesh visibility"}},
+                {"category":"MESH","check":"run_mesh_renderStats", "fix":"fix_mesh_renderStats","ui":{"label":"Mesh wrong renderStats"}},
+                {"category":"MESH","check":"run_mesh_instance", "fix":"fix_mesh_instance","ui":{"label":"Mesh instance"}},
+                {"category":"MESH","check":"run_mesh_cleanup", "fix":"None","ui":{"label":"Mesh cleanup"}},
+                {"category":"MESH","check":"run_mesh_polyColor", "fix":"fix_mesh_polyColor","ui":{"label":"Mesh polyColor"}},
+                {"category":"MESH","check":"run_mesh_ngones", "fix":"None","ui":{"label":"Mesh nGones"}},
+                {"category":"MESH","check":"run_mesh_geo_issues", "fix":"None","ui":{"label":"Mesh geo Issues"}}
+            ]
+        }
+    ]
+    }]
+}

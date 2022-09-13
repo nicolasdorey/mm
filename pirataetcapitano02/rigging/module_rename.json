@@ -1,0 +1,24 @@
+{
+"C_Master" : "C_Root01",
+"World_CtrlGrp" : "C_Root01_Ctrls_Grp",
+"TrashGrp" : "_Trash_Grp",
+"World_Sta_CtrlGrp" : "C_Root01_WorldSta_Grp",
+"World_Sta_Ctrl" : "C_Root01_WorldSta_Ctrl",
+"World_Anm_CtrlGrp" : "C_Root01_WorldAnm_Grp",
+"World_Anm_Ctrl" : "C_Root01_WorldAnm_Ctrl",
+"Traj_CtrlGrp" : "C_Root01_Traj_Grp",
+"Traj_Sta_CtrlGrp" : "C_Root01_TrajSta_Grp",
+"Traj_Sta_Ctrl" : "C_Root01_TrajSta_Ctrl",
+"Traj_Anm_CtrlGrp" : "C_Root01_TrajAnm_Grp",
+"Traj_Anm_Ctrl" : "C_Root01_TrajAnm_Ctrl",
+"Cog_CtrlGrp" : "C_Root01_Cog_Grp",
+"Cog_Sta_CtrlGrp" : "C_Root01_CogSta_Grp",
+"Cog_Sta_Ctrl" : "C_Root01_CogSta_Ctrl",
+"Cog_Anm_CtrlGrp" : "C_Root01_CogAnm_Grp",
+"Cog_Anm_Ctrl" : "C_Root01_CogAnm_Ctrl",
+"Cog_Pos_Loc" : "_CogPos_Loc",
+"Ctrls|":"Ctrls_Grp|",
+"_Ctrls_Grp|":"C_Root01_Ctrls_Grp|",
+"SkinJoints|":"SkinJoints_Grp|"
+}
+
